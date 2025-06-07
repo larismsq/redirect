@@ -5,10 +5,25 @@
   <meta charset="UTF-8">
   <title>Redirecionando para o WhatsApp...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68KP6W2TZD"></script>
   <script>
-    setTimeout(function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68KP6W2TZD');
+  </script>
+  <script>
+   // Aguarda um pequeno tempo para garantir que o GA carregue antes de enviar o evento
+   setTimeout(function() {
+      gtag('event', 'whatsapp_click_FernandoPessoa', {
+       event_category: 'engajamento',
+       event_label: 'Redirecionamento para o WhatsApp'
+      });
+      // Redirecionamento após o evento ser disparado   
       window.location.href = "https://wa.me/5585999678337?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra.%20Larissa%20Quinder%C3%A9.";
-    }, 500); // 1000 milissegundos = 1 segundo
+    }, 500); // 0,5 segundo
   </script>
   <style>
     body {
