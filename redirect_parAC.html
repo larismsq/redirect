@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>P.AC-Redirecionando para o WhatsApp...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68KP6W2TZD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68KP6W2TZD');
+  </script>
+  <script>
+   // Aguarda um pequeno tempo para garantir que o GA carregue antes de enviar o evento
+   setTimeout(function() {
+      gtag('event', 'whatsapp_click_ParticularAC', {
+       event_category: 'engajamento',
+       event_label: 'Redirecionamento para o WhatsApp'
+      });
+      // Redirecionamento após o evento ser disparado   
+      window.location.href = "https://wa.me/5585984045256?text=Ol%C3%A1!+Gostaria+de+marcar+uma+consulta+particular+com+a+Dra.+Larissa+Quinder%C3%A9+(g).";
+    }, 500); // 0,5 segundo
+  </script>
+  <style>
+    body {
+      background-color: #ffede9;
+      color: #725d4c;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Você será redirecionado para o WhatsApp em instantes...</h1>
+</body>
+</html>
